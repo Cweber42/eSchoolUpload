@@ -68,7 +68,7 @@ Catch
 {
  $statuscode = $_.Exception.Response.Statuscode.value__
 }
-$statuscode
+$statuscode #Attempted to do a Try/catch for failure to auth while testing the password issue, all status codes always came back as 200 for me
 #Get the first HTML <form> element on the page (set environment form in this case)
 $form2 = $response2.Forms[0]
 
